@@ -6,6 +6,7 @@ import serviceCommercial from "@/assets/service-commercial.jpg";
 import serviceSoftwash from "@/assets/service-softwash.jpg";
 import heroPermanentLighting from "@/assets/bigtexlight1.png";
 import heroPressureWashing from "@/assets/hero-pressure-washing.jpg";
+import holidayLightsNew from "@/assets/holiday-lights-new.png";
 
 const galleryImages = [
   {
@@ -40,7 +41,7 @@ const galleryImages = [
   },
   {
     id: 6,
-    src: heroPermanentLighting,
+    src: holidayLightsNew,
     title: "Holiday Permanent Christmas Lights",
     category: "Permanent Christmas Lights",
   },

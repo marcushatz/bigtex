@@ -7,7 +7,7 @@ const CTASection = () => {
     <section className="relative py-24 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary via-navy to-primary" />
-      
+
       {/* Animated Gradient Overlay */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-sky/30 rounded-full blur-[100px] animate-float" />
@@ -15,7 +15,7 @@ const CTASection = () => {
       </div>
 
       {/* Grid Pattern */}
-      <div 
+      <div
         className="absolute inset-0 opacity-5"
         style={{
           backgroundImage: `linear-gradient(hsl(var(--secondary) / 0.3) 1px, transparent 1px),
@@ -64,8 +64,8 @@ const CTASection = () => {
             transition={{ delay: 0.4 }}
             className="text-xl text-primary-foreground/80 mb-6 max-w-2xl mx-auto"
           >
-            Get a free, no-obligation estimate today. Our team is ready to bring 
-            quality and care to your home or business in New Braunfels.
+            Get a free, no-obligation estimate today. Our team is ready to bring
+            quality and care to your home or business in San Antonio, Austin & Surrounding Areas.
           </motion.p>
 
           {/* Free Estimate Badge */}
@@ -95,9 +95,9 @@ const CTASection = () => {
               </a>
             </Button>
             <Button variant="hero" size="xl" asChild>
-              <a href="tel:+1234567890" className="group">
+              <a href="tel:+18304810523" className="group">
                 <Phone className="h-5 w-5" />
-                Call (123) 456-7890
+                Call 830-481-0523
               </a>
             </Button>
           </motion.div>
@@ -124,7 +124,7 @@ const CTASection = () => {
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-green-400" />
-              <span className="text-sm">New Braunfels Local</span>
+              <span className="text-sm">Locally Owned</span>
             </div>
           </motion.div>
         </motion.div>

@@ -60,12 +60,11 @@ const AboutSection = () => {
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-6"
               >
                 <MapPin className="h-4 w-4" />
-                <span className="font-medium">Proudly Serving New Braunfels, TX &amp; Hill Country</span>
+                <span className="font-medium">Proudly Serving San Antonio, Austin &amp; Surrounding Areas</span>
               </motion.div>
 
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Big Tex Pressure Pros has been serving the New Braunfels area and the beautiful
-                Texas Hill Country with pride and dedication. We combine professional-grade
+                Big Tex Pressure Pros has been serving the San Antonio, Austin, and surrounding areas
                 equipment with meticulous attention to detail, ensuring every project exceeds expectations.
               </p>
 

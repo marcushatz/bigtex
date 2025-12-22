@@ -78,7 +78,7 @@ const ServicesSection = () => {
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             From powerful pressure washing to beautiful Permanent Christmas Lights, we offer comprehensive
-            services to transform and maintain your property in New Braunfels and the Hill Country.
+            services to transform and maintain your property in San Antonio, Austin, and surrounding areas.
           </p>
 
           {/* Free Estimate Badge */}

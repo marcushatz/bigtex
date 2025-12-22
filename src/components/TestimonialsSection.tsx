@@ -6,7 +6,7 @@ const testimonials = [
   {
     id: 1,
     name: "Mike Thompson",
-    location: "New Braunfels, TX",
+    location: "San Antonio, TX",
     rating: 5,
     text: "Big Tex did an incredible job on our driveway and patio. The difference is night and day! They were professional, on time, and the results exceeded our expectations. Highly recommend!",
     service: "Pressure Washing",
@@ -22,7 +22,7 @@ const testimonials = [
   {
     id: 3,
     name: "Robert & Lisa Garcia",
-    location: "New Braunfels, TX",
+    location: "Austin, TX",
     rating: 5,
     text: "We had our gutters cleaned and it made such a difference. They were thorough, professional, and even showed us pictures of what they found. Great preventive maintenance!",
     service: "Gutter Cleaning",

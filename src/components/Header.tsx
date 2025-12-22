@@ -33,12 +33,12 @@ const Header = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4 opacity-80" />
-              <span>Serving New Braunfels, TX &amp; Surrounding Areas</span>
+              <span>Serving San Antonio, Austin &amp; Surrounding Areas</span>
             </div>
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4 opacity-80" />
-              <a href="tel:+1234567890" className="hover:opacity-80 transition-opacity">
-                (123) 456-7890
+              <a href="tel:+18304810523" className="hover:opacity-80 transition-opacity">
+                830-481-0523
               </a>
             </div>
           </div>
@@ -53,11 +53,10 @@ const Header = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`fixed top-0 lg:top-10 left-0 right-0 z-50 transition-all duration-500 ${
-          isScrolled
-            ? "glass py-2 shadow-soft lg:top-0"
-            : "bg-white/90 backdrop-blur-md py-3"
-        }`}
+        className={`fixed top-0 lg:top-10 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
+          ? "glass py-2 shadow-soft lg:top-0"
+          : "bg-white/90 backdrop-blur-md py-3"
+          }`}
       >
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between">
@@ -68,9 +67,9 @@ const Header = () => {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <img 
-                src={logo} 
-                alt="Big Tex Pressure Pros" 
+              <img
+                src={logo}
+                alt="Big Tex Pressure Pros"
                 className="h-14 md:h-16 w-auto object-contain"
               />
             </motion.a>
@@ -126,14 +125,14 @@ const Header = () => {
               <div className="px-6 py-4 bg-primary/5 border-b border-border">
                 <div className="flex items-center gap-2 text-sm text-primary mb-2">
                   <MapPin className="h-4 w-4" />
-                  <span>New Braunfels, TX</span>
+                  <span>San Antonio / Austin, TX</span>
                 </div>
                 <div className="inline-flex items-center gap-2 bg-green-600 text-white px-3 py-1 rounded-full text-sm">
                   <CheckCircle className="h-3 w-3" />
                   <span className="font-semibold">Free Estimates</span>
                 </div>
               </div>
-              
+
               <nav className="flex flex-col py-2">
                 {navLinks.map((link, index) => (
                   <motion.a
@@ -149,9 +148,9 @@ const Header = () => {
                   </motion.a>
                 ))}
                 <div className="px-6 py-4 border-t border-border mt-2">
-                  <a href="tel:+1234567890" className="flex items-center gap-2 text-primary font-semibold mb-3">
+                  <a href="tel:+18304810523" className="flex items-center gap-2 text-primary font-semibold mb-3">
                     <Phone className="h-4 w-4" />
-                    (123) 456-7890
+                    830-481-0523
                   </a>
                   <Button variant="glow" className="w-full" asChild>
                     <a href="#contact">Get Free Estimate</a>

@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { Locate, CheckCircle } from "lucide-react";
+import { Locate } from "lucide-react";
 
 const MapSection = () => {
     return (
@@ -24,7 +24,7 @@ const MapSection = () => {
 
                     <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
                         <span className="text-foreground">Proudly Serving </span>
-                        <span className="gradient-text">New Braunfels</span>
+                        <span className="gradient-text">San Antonio, Austin & Surrounding Areas</span>
                     </h2>
                     <p className="text-lg text-muted-foreground mb-4">
                         Based in the heart of Texas, we are your local experts for all exterior cleaning needs.
@@ -39,14 +39,13 @@ const MapSection = () => {
                     className="rounded-2xl overflow-hidden shadow-2xl border border-border h-[450px] w-full"
                 >
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110825.96541655027!2d-98.19662776361957!3d29.699313264971485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c92c555555555%3A0x5555555555555555!2sNew%20Braunfels%2C%20TX!5e0!3m2!1sen!2sus!4v1714080000000!5m2!1sen!2sus"
+                        src="https://www.google.com/maps/d/embed?mid=1Q_4b7JiUjCR49xeq7R_GdyOsRiJradY"
                         width="100%"
-                        height="100%"
-                        style={{ border: 0 }}
-                        allowFullScreen={true}
+                        height="120%"
+                        style={{ border: 0, marginTop: '-65px' }}
+                        allowFullScreen
                         loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                        title="Google Map of New Braunfels, TX"
+                        title="Big Tex Service Area Map"
                     ></iframe>
                 </motion.div>
             </div>

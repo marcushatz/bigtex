@@ -10,25 +10,25 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    value: "(123) 456-7890",
-    link: "tel:+1234567890",
+    value: "830-481-0523",
+    link: "tel:+18304810523",
   },
   {
     icon: Mail,
     title: "Email",
-    value: "info@bigtexpressurepros.com",
-    link: "mailto:info@bigtexpressurepros.com",
+    value: "bigtexpowerpro@gmail.com",
+    link: "mailto:bigtexpowerpro@gmail.com",
   },
   {
     icon: MapPin,
     title: "Location",
-    value: "New Braunfels, TX",
+    value: "San Antonio Texas-Austin Texas & Surrounding Areas",
     link: null,
   },
   {
     icon: Clock,
     title: "Hours",
-    value: "Mon-Sat: 7AM-7PM",
+    value: "Fri-Sunday 8am-10pm",
     link: null,
   },
 ];
@@ -47,11 +47,32 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/bigtexpowerpro@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          _subject: `New Estimate Request from ${formData.name}`,
+          _captcha: "false", // disabling captcha for smoother UX, can enable if needed
+        }),
+      });
 
-    toast.success("Message sent successfully! We'll get back to you soon.");
-    setFormData({ name: "", email: "", phone: "", service: "", message: "" });
-    setIsSubmitting(false);
+      if (response.ok) {
+        toast.success("Message sent successfully! We'll get back to you soon.");
+        setFormData({ name: "", email: "", phone: "", service: "", message: "" });
+      } else {
+        toast.error("Something went wrong. Please try again later.");
+      }
+    } catch (error) {
+      toast.error("Network error. Please try again later.");
+      console.error("Form submission error:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -144,7 +165,7 @@ const ContactSection = () => {
                     type="tel"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="(123) 456-7890"
+                    placeholder="(555)-555-5555"
                     className="bg-card border-border focus:border-secondary h-12"
                   />
                 </div>
@@ -248,7 +269,7 @@ const ContactSection = () => {
                   "Free, no-obligation estimates",
                   "100% satisfaction guarantee",
                   "Licensed and fully insured",
-                  "Locally owned in New Braunfels",
+                  "Locally owned in New Braunfels, Texas",
                   "Same-day response to inquiries",
                 ].map((item, index) => (
                   <motion.div
