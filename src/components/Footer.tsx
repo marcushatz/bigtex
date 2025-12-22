@@ -7,7 +7,7 @@ const Footer = () => {
 
   const services = [
     "Pressure Washing",
-    "Outdoor Lighting",
+    "Permanent Christmas Lights",
     "Gutter Cleaning",
     "Fencing Services",
     "Soft Washing",
@@ -38,7 +38,7 @@ const Footer = () => {
           >
             <img src={logo} alt="Big Tex Pressure Pros" className="h-20 w-auto bg-white/90 rounded-lg p-2" />
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              New Braunfels&apos; trusted exterior cleaning and home service professionals. 
+              New Braunfels&apos; trusted exterior cleaning and home service professionals.
               We bring quality and care to every project.
             </p>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-600 text-white text-sm">

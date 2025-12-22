@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Droplets, Lightbulb, ArrowRight, CheckCircle, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroPressureWashing from "@/assets/hero-pressure-washing.jpg";
-import heroPermanentLighting from "@/assets/hero-permanent-lighting.jpg";
+import heroPermanentLighting from "@/assets/bigtexlight1.png";
 
 const slides = [
   {
@@ -19,9 +19,9 @@ const slides = [
     id: 2,
     image: heroPermanentLighting,
     title: "Beautiful",
-    subtitle: "Outdoor Lighting",
-    highlight: "Permanent Lighting Solutions",
-    description: "Enhance your home's beauty and security with our professional lighting installation. Energy-efficient LED systems for year-round enjoyment.",
+    subtitle: "Permanent Christmas Lights",
+    highlight: "Permanent Christmas Lights Solutions",
+    description: "Enhance your home's beauty and security with our professional Permanent Christmas Lights installation. Energy-efficient LED systems for year-round enjoyment.",
     icon: Lightbulb,
   },
 ];
@@ -218,7 +218,7 @@ const HeroSection = () => {
         >
           <ChevronLeft className="h-6 w-6" />
         </button>
-        
+
         <div className="flex gap-3">
           {slides.map((_, index) => (
             <button
@@ -227,11 +227,10 @@ const HeroSection = () => {
                 setIsAutoPlaying(false);
                 setCurrentSlide(index);
               }}
-              className={`h-2 rounded-full transition-all duration-300 ${
-                index === currentSlide
-                  ? "w-8 bg-sky-light shadow-glow"
-                  : "w-2 bg-white/40 hover:bg-white/60"
-              }`}
+              className={`h-2 rounded-full transition-all duration-300 ${index === currentSlide
+                ? "w-8 bg-sky-light shadow-glow"
+                : "w-2 bg-white/40 hover:bg-white/60"
+                }`}
             />
           ))}
         </div>

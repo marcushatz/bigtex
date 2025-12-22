@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Lightbulb, Droplets, Home, Fence, Sparkles, Shield, ArrowRight, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import serviceLighting from "@/assets/service-lighting.jpg";
+import serviceLighting from "@/assets/bigtexlight2.png";
 import serviceCommercial from "@/assets/service-commercial.jpg";
 import serviceSoftwash from "@/assets/service-softwash.jpg";
 
@@ -18,10 +18,10 @@ const services = [
   {
     id: "lighting",
     icon: Lightbulb,
-    title: "Outdoor Lighting",
-    description: "Beautiful permanent LED lighting solutions for your home. Perfect for holidays, security, and everyday ambiance with smart app control.",
+    title: "Permanent Christmas Lights",
+    description: "Beautiful Permanent Christmas Lights solutions for your home. Perfect for holidays, security, and everyday ambiance with smart app control.",
     image: serviceLighting,
-    features: ["Permanent LED Systems", "Smart App Control", "Energy Efficient", "Professional Installation"],
+    features: ["Permanent Christmas Lights", "Smart App Control", "Energy Efficient", "Professional Installation"],
     featured: false,
   },
   {
@@ -77,7 +77,7 @@ const ServicesSection = () => {
             <span className="gradient-text">Home Services</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            From powerful pressure washing to beautiful outdoor lighting, we offer comprehensive 
+            From powerful pressure washing to beautiful Permanent Christmas Lights, we offer comprehensive
             services to transform and maintain your property in New Braunfels and the Hill Country.
           </p>
 
@@ -114,7 +114,7 @@ const ServicesSection = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-card lg:block hidden" />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent lg:hidden" />
-                
+
                 {/* Floating Badge */}
                 <motion.div
                   initial={{ opacity: 0, scale: 0 }}
@@ -140,8 +140,8 @@ const ServicesSection = () => {
                   </div>
 
                   <p className="text-muted-foreground text-lg leading-relaxed">
-                    Transform your property with our professional pressure washing services. 
-                    Using commercial-grade equipment and eco-friendly solutions, we restore 
+                    Transform your property with our professional pressure washing services.
+                    Using commercial-grade equipment and eco-friendly solutions, we restore
                     driveways, patios, decks, and more to their original beauty.
                   </p>
 
@@ -180,60 +180,62 @@ const ServicesSection = () => {
 
         {/* Other Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.slice(1).map((service, index) => {
-            const Icon = service.icon;
-            return (
-              <motion.div
-                key={service.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="group relative rounded-2xl overflow-hidden bg-card border border-border hover:border-secondary/50 transition-all duration-500 hover:shadow-glow"
-              >
-                {/* Image */}
-                <div className="relative h-48 overflow-hidden">
-                  <motion.img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
-                  
-                  {/* Icon */}
-                  <div className="absolute bottom-4 left-4 w-12 h-12 rounded-xl bg-card/90 backdrop-blur-sm flex items-center justify-center border border-border group-hover:border-secondary/50 transition-colors">
-                    <Icon className="h-6 w-6 text-secondary" />
-                  </div>
-                </div>
+          {
+            services.slice(1).map((service, index) => {
+              const Icon = service.icon;
+              return (
+                <motion.div
+                  key={service.id}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="group relative rounded-2xl overflow-hidden bg-card border border-border hover:border-secondary/50 transition-all duration-500 hover:shadow-glow"
+                >
+                  {/* Image */}
+                  <div className="relative h-48 overflow-hidden">
+                    <motion.img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
 
-                {/* Content */}
-                <div className="p-6 space-y-4">
-                  <h3 className="font-heading text-xl font-bold text-foreground group-hover:text-secondary transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {service.description}
-                  </p>
-
-                  <div className="space-y-2">
-                    {service.features.slice(0, 2).map((feature) => (
-                      <div key={feature} className="flex items-center gap-2 text-xs text-muted-foreground">
-                        <div className="w-1.5 h-1.5 rounded-full bg-secondary" />
-                        {feature}
-                      </div>
-                    ))}
+                    {/* Icon */}
+                    <div className="absolute bottom-4 left-4 w-12 h-12 rounded-xl bg-card/90 backdrop-blur-sm flex items-center justify-center border border-border group-hover:border-secondary/50 transition-colors">
+                      <Icon className="h-6 w-6 text-secondary" />
+                    </div>
                   </div>
 
-                  <Button variant="ghost" className="w-full justify-between group/btn" asChild>
-                    <a href="#contact">
-                      Get Free Estimate
-                      <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-                    </a>
-                  </Button>
-                </div>
-              </motion.div>
-            );
-          })}
+                  {/* Content */}
+                  <div className="p-6 space-y-4">
+                    <h3 className="font-heading text-xl font-bold text-foreground group-hover:text-secondary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {service.description}
+                    </p>
+
+                    <div className="space-y-2">
+                      {service.features.slice(0, 2).map((feature) => (
+                        <div key={feature} className="flex items-center gap-2 text-xs text-muted-foreground">
+                          <div className="w-1.5 h-1.5 rounded-full bg-secondary" />
+                          {feature}
+                        </div>
+                      ))}
+                    </div>
+
+                    <Button variant="ghost" className="w-full justify-between group/btn" asChild>
+                      <a href="#contact">
+                        Get Free Estimate
+                        <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                      </a>
+                    </Button>
+                  </div>
+                </motion.div>
+              );
+            })
+          }
         </div>
       </div>
     </section>

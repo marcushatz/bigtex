@@ -17,7 +17,7 @@ const testimonials = [
     location: "San Marcos, TX",
     rating: 5,
     text: "The outdoor lighting they installed has completely transformed our home! We get compliments from neighbors all the time. The app control is so convenient - we can change colors for any holiday.",
-    service: "Outdoor Lighting",
+    service: "Permanent Christmas Lights",
   },
   {
     id: 3,
@@ -76,7 +76,7 @@ const TestimonialsSection = () => {
             <span className="gradient-text">Customers Say</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Don&apos;t just take our word for it. Here&apos;s what Texas homeowners and 
+            Don&apos;t just take our word for it. Here&apos;s what Texas homeowners and
             businesses say about our services.
           </p>
         </motion.div>
@@ -140,11 +140,10 @@ const TestimonialsSection = () => {
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    index === currentIndex
-                      ? "w-8 bg-secondary shadow-glow"
-                      : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
-                  }`}
+                  className={`h-2 rounded-full transition-all duration-300 ${index === currentIndex
+                    ? "w-8 bg-secondary shadow-glow"
+                    : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                    }`}
                 />
               ))}
             </div>

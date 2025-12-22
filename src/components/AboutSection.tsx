@@ -64,36 +64,38 @@ const AboutSection = () => {
               </motion.div>
 
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Big Tex Pressure Pros has been serving the New Braunfels area and the beautiful 
-                Texas Hill Country with pride and dedication. We combine professional-grade 
+                Big Tex Pressure Pros has been serving the New Braunfels area and the beautiful
+                Texas Hill Country with pride and dedication. We combine professional-grade
                 equipment with meticulous attention to detail, ensuring every project exceeds expectations.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
                 From <span className="text-secondary font-semibold">pressure washing</span> and{" "}
                 <span className="text-secondary font-semibold">gutter cleaning</span> to{" "}
-                <span className="text-secondary font-semibold">outdoor lighting</span> and{" "}
-                <span className="text-secondary font-semibold">fencing services</span>, 
-                we&apos;re your one-stop solution for complete exterior home care. All of our 
+                <span className="text-secondary font-semibold">Permanent Christmas Lights</span> and{" "}
+                <span className="text-secondary font-semibold">fencing services</span>,
+                we&apos;re your one-stop solution for complete exterior home care. All of our
                 services come with free estimates—no obligation, no pressure.
               </p>
             </div>
 
             {/* Features Grid */}
             <div className="grid grid-cols-2 gap-4">
-              {features.map((feature, index) => (
-                <motion.div
-                  key={feature}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="flex items-center gap-3"
-                >
-                  <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                  <span className="text-foreground text-sm">{feature}</span>
-                </motion.div>
-              ))}
+              {
+                features.map((feature, index) => (
+                  <motion.div
+                    key={feature}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    className="flex items-center gap-3"
+                  >
+                    <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
+                    <span className="text-foreground text-sm">{feature}</span>
+                  </motion.div>
+                ))
+              }
             </div>
 
             {/* Logo */}
@@ -114,34 +116,35 @@ const AboutSection = () => {
             viewport={{ once: true }}
             className="grid grid-cols-2 gap-6"
           >
-            {stats.map((stat, index) => {
-              const Icon = stat.icon;
-              return (
-                <motion.div
-                  key={stat.label}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.2 + index * 0.1 }}
-                  className="group relative p-8 rounded-2xl bg-card border border-border hover:border-secondary/50 transition-all duration-500 hover:shadow-glow"
-                >
-                  {/* Gradient overlay on hover */}
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-sky/10 to-steel/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  
-                  <div className="relative z-10 text-center space-y-4">
-                    <div className="w-16 h-16 mx-auto rounded-2xl bg-muted flex items-center justify-center group-hover:bg-secondary/10 transition-colors">
-                      <Icon className="h-8 w-8 text-secondary" />
+            {
+              stats.map((stat, index) => {
+                const Icon = stat.icon;
+                return (
+                  <motion.div
+                    key={stat.label}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2 + index * 0.1 }}
+                    className="group relative p-8 rounded-2xl bg-card border border-border hover:border-secondary/50 transition-all duration-500 hover:shadow-glow"
+                  >
+                    {/* Gradient overlay on hover */}
+                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-sky/10 to-steel/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                    <div className="relative z-10 text-center space-y-4">
+                      <div className="w-16 h-16 mx-auto rounded-2xl bg-muted flex items-center justify-center group-hover:bg-secondary/10 transition-colors">
+                        <Icon className="h-8 w-8 text-secondary" />
+                      </div>
+                      <div className="font-heading text-4xl font-bold gradient-text">
+                        {stat.value}
+                      </div>
+                      <div className="text-muted-foreground text-sm">
+                        {stat.label}
+                      </div>
                     </div>
-                    <div className="font-heading text-4xl font-bold gradient-text">
-                      {stat.value}
-                    </div>
-                    <div className="text-muted-foreground text-sm">
-                      {stat.label}
-                    </div>
-                  </div>
-                </motion.div>
-              );
-            })}
+                  </motion.div>
+                );
+              })}
           </motion.div>
         </div>
       </div>

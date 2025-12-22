@@ -1,24 +1,24 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight, Images } from "lucide-react";
-import serviceLighting from "@/assets/service-lighting.jpg";
+import serviceLighting from "@/assets/bigtexlight2.png";
 import serviceCommercial from "@/assets/service-commercial.jpg";
 import serviceSoftwash from "@/assets/service-softwash.jpg";
-import heroPermanentLighting from "@/assets/hero-permanent-lighting.jpg";
+import heroPermanentLighting from "@/assets/bigtexlight1.png";
 import heroPressureWashing from "@/assets/hero-pressure-washing.jpg";
 
 const galleryImages = [
   {
     id: 1,
     src: heroPermanentLighting,
-    title: "Modern Home Lighting",
-    category: "Lighting",
+    title: "Modern Home Permanent Christmas Lights",
+    category: "Permanent Christmas Lights",
   },
   {
     id: 2,
     src: serviceLighting,
     title: "Architectural Illumination",
-    category: "Lighting",
+    category: "Permanent Christmas Lights",
   },
   {
     id: 3,
@@ -41,19 +41,19 @@ const galleryImages = [
   {
     id: 6,
     src: heroPermanentLighting,
-    title: "Holiday Lighting",
-    category: "Lighting",
+    title: "Holiday Permanent Christmas Lights",
+    category: "Permanent Christmas Lights",
   },
 ];
 
-const categories = ["All", "Pressure Washing", "Lighting", "Gutter Cleaning"];
+const categories = ["All", "Pressure Washing", "Permanent Christmas Lights", "Gutter Cleaning"];
 
 const GallerySection = () => {
   const [filter, setFilter] = useState("All");
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
-  const filteredImages = filter === "All" 
-    ? galleryImages 
+  const filteredImages = filter === "All"
+    ? galleryImages
     : galleryImages.filter((img) => img.category === filter);
 
   const openLightbox = (index: number) => setSelectedImage(index);
@@ -93,7 +93,7 @@ const GallerySection = () => {
             <span className="gradient-text">Gallery</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Browse our portfolio of completed projects. From stunning lighting installations 
+            Browse our portfolio of completed projects. From stunning lighting installations
             to dramatic before-and-after transformations.
           </p>
         </motion.div>
@@ -109,11 +109,10 @@ const GallerySection = () => {
             <button
               key={category}
               onClick={() => setFilter(category)}
-              className={`px-5 py-2.5 rounded-full font-medium text-sm transition-all duration-300 ${
-                filter === category
-                  ? "bg-secondary text-secondary-foreground shadow-glow"
-                  : "glass text-muted-foreground hover:text-foreground hover:border-secondary/50"
-              }`}
+              className={`px-5 py-2.5 rounded-full font-medium text-sm transition-all duration-300 ${filter === category
+                ? "bg-secondary text-secondary-foreground shadow-glow"
+                : "glass text-muted-foreground hover:text-foreground hover:border-secondary/50"
+                }`}
             >
               {category}
             </button>
@@ -121,7 +120,7 @@ const GallerySection = () => {
         </motion.div>
 
         {/* Gallery Grid */}
-        <motion.div 
+        <motion.div
           layout
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
@@ -156,58 +155,60 @@ const GallerySection = () => {
 
       {/* Lightbox */}
       <AnimatePresence>
-        {selectedImage !== null && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-background/95 backdrop-blur-xl p-4"
-            onClick={closeLightbox}
-          >
-            <button
-              onClick={closeLightbox}
-              className="absolute top-6 right-6 w-12 h-12 rounded-full glass flex items-center justify-center text-foreground hover:text-secondary transition-colors"
-            >
-              <X className="h-6 w-6" />
-            </button>
-
-            <button
-              onClick={(e) => { e.stopPropagation(); prevImage(); }}
-              className="absolute left-6 w-12 h-12 rounded-full glass flex items-center justify-center text-foreground hover:text-secondary transition-colors"
-            >
-              <ChevronLeft className="h-6 w-6" />
-            </button>
-
+        {
+          selectedImage !== null && (
             <motion.div
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              onClick={(e) => e.stopPropagation()}
-              className="max-w-5xl max-h-[80vh] relative"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 z-50 flex items-center justify-center bg-background/95 backdrop-blur-xl p-4"
+              onClick={closeLightbox}
             >
-              <img
-                src={filteredImages[selectedImage].src}
-                alt={filteredImages[selectedImage].title}
-                className="max-w-full max-h-[80vh] rounded-2xl object-contain"
-              />
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background to-transparent rounded-b-2xl">
-                <div className="text-sm text-secondary font-medium mb-1">
-                  {filteredImages[selectedImage].category}
-                </div>
-                <div className="font-heading text-xl font-bold text-foreground">
-                  {filteredImages[selectedImage].title}
-                </div>
-              </div>
-            </motion.div>
+              <button
+                onClick={closeLightbox}
+                className="absolute top-6 right-6 w-12 h-12 rounded-full glass flex items-center justify-center text-foreground hover:text-secondary transition-colors"
+              >
+                <X className="h-6 w-6" />
+              </button>
 
-            <button
-              onClick={(e) => { e.stopPropagation(); nextImage(); }}
-              className="absolute right-6 w-12 h-12 rounded-full glass flex items-center justify-center text-foreground hover:text-secondary transition-colors"
-            >
-              <ChevronRight className="h-6 w-6" />
-            </button>
-          </motion.div>
-        )}
+              <button
+                onClick={(e) => { e.stopPropagation(); prevImage(); }}
+                className="absolute left-6 w-12 h-12 rounded-full glass flex items-center justify-center text-foreground hover:text-secondary transition-colors"
+              >
+                <ChevronLeft className="h-6 w-6" />
+              </button>
+
+              <motion.div
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.9, opacity: 0 }}
+                onClick={(e) => e.stopPropagation()}
+                className="max-w-5xl max-h-[80vh] relative"
+              >
+                <img
+                  src={filteredImages[selectedImage].src}
+                  alt={filteredImages[selectedImage].title}
+                  className="max-w-full max-h-[80vh] rounded-2xl object-contain"
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background to-transparent rounded-b-2xl">
+                  <div className="text-sm text-secondary font-medium mb-1">
+                    {filteredImages[selectedImage].category}
+                  </div>
+                  <div className="font-heading text-xl font-bold text-foreground">
+                    {filteredImages[selectedImage].title}
+                  </div>
+                </div>
+              </motion.div>
+
+              <button
+                onClick={(e) => { e.stopPropagation(); nextImage(); }}
+                className="absolute right-6 w-12 h-12 rounded-full glass flex items-center justify-center text-foreground hover:text-secondary transition-colors"
+              >
+                <ChevronRight className="h-6 w-6" />
+              </button>
+            </motion.div>
+          )
+        }
       </AnimatePresence>
     </section>
   );

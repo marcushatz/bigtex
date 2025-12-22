@@ -46,9 +46,9 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     await new Promise((resolve) => setTimeout(resolve, 1500));
-    
+
     toast.success("Message sent successfully! We'll get back to you soon.");
     setFormData({ name: "", email: "", phone: "", service: "", message: "" });
     setIsSubmitting(false);
@@ -91,7 +91,7 @@ const ContactSection = () => {
             Ready to transform your property? Fill out the form below or give us a call.
             We respond to all inquiries within 24 hours.
           </p>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -159,7 +159,7 @@ const ContactSection = () => {
                   >
                     <option value="">Select a service</option>
                     <option value="pressure-washing">Pressure Washing</option>
-                    <option value="lighting">Outdoor Lighting</option>
+                    <option value="lighting">Permanent Christmas Lights</option>
                     <option value="gutter-cleaning">Gutter Cleaning</option>
                     <option value="fencing">Fencing Services</option>
                     <option value="other">Other</option>
@@ -179,10 +179,10 @@ const ContactSection = () => {
                 />
               </div>
 
-              <Button 
-                type="submit" 
-                variant="glow" 
-                size="xl" 
+              <Button
+                type="submit"
+                variant="glow"
+                size="xl"
                 className="w-full"
                 disabled={isSubmitting}
               >
