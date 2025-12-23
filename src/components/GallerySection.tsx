@@ -6,6 +6,8 @@ import serviceCommercial from "@/assets/service-commercial.jpg";
 import serviceSoftwash from "@/assets/service-softwash.jpg";
 import heroPermanentLighting from "@/assets/bigtexlight1.png";
 import heroPressureWashing from "@/assets/hero-pressure-washing.jpg";
+import bigtexBefore from "@/assets/bigtexbefore.jpg";
+import bigtexAfter from "@/assets/bigtexafter.jpg";
 import holidayLightsNew from "@/assets/holiday-lights-new.png";
 
 const galleryImages = [
@@ -22,8 +24,10 @@ const galleryImages = [
     category: "Permanent Holiday Lights",
   },
   {
-    id: 3,
-    src: heroPressureWashing,
+    id: 3, // Driveway Restoration
+    src: bigtexAfter, // Fallback/Main for lightbox if not handled
+    beforeSrc: bigtexBefore,
+    afterSrc: bigtexAfter,
     title: "Driveway Restoration",
     category: "Pressure Washing",
   },
@@ -137,11 +141,27 @@ const GallerySection = () => {
                 className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer"
                 onClick={() => openLightbox(index)}
               >
-                <img
-                  src={image.src}
-                  alt={image.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                />
+                {(image as any).beforeSrc && (image as any).afterSrc ? (
+                  <div className="flex w-full h-full group-hover:scale-110 transition-transform duration-700">
+                    <img
+                      src={(image as any).beforeSrc}
+                      alt={`${image.title} Before`}
+                      className="w-1/2 h-full object-cover"
+                    />
+                    <div className="w-[2px] bg-white/20 relative z-10"></div>
+                    <img
+                      src={(image as any).afterSrc}
+                      alt={`${image.title} After`}
+                      className="w-1/2 h-full object-cover"
+                    />
+                  </div>
+                ) : (
+                  <img
+                    src={image.src}
+                    alt={image.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                   <div className="text-sm text-secondary font-medium mb-1">{image.category}</div>
