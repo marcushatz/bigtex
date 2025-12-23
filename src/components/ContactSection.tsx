@@ -22,7 +22,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Location",
-    value: "San Antonio Texas-Austin Texas & Surrounding Areas",
+    value: "San Antonio through Austin Texas",
     link: null,
   },
   {
@@ -180,9 +180,9 @@ const ContactSection = () => {
                   >
                     <option value="">Select a service</option>
                     <option value="pressure-washing">Pressure Washing</option>
-                    <option value="lighting">Permanent Christmas Lights</option>
+                    <option value="lighting">Permanent Holiday Lights</option>
                     <option value="gutter-cleaning">Gutter Cleaning</option>
-                    <option value="fencing">Fencing Services</option>
+                    <option value="tree-trimming">Tree Trimming Services</option>
                     <option value="other">Other</option>
                   </select>
                 </div>

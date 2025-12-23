@@ -24,7 +24,7 @@ const MapSection = () => {
 
                     <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
                         <span className="text-foreground">Proudly Serving </span>
-                        <span className="gradient-text">San Antonio, Austin & Surrounding Areas</span>
+                        <span className="gradient-text">San Antonio through Austin Texas</span>
                     </h2>
                     <p className="text-lg text-muted-foreground mb-4">
                         Based in the heart of Texas, we are your local experts for all exterior cleaning needs.

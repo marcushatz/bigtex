@@ -65,7 +65,7 @@ const CTASection = () => {
             className="text-xl text-primary-foreground/80 mb-6 max-w-2xl mx-auto"
           >
             Get a free, no-obligation estimate today. Our team is ready to bring
-            quality and care to your home or business in San Antonio, Austin & Surrounding Areas.
+            quality and care to your home or business in San Antonio through Austin Texas.
           </motion.p>
 
           {/* Free Estimate Badge */}

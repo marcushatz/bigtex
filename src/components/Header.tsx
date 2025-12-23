@@ -33,7 +33,7 @@ const Header = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4 opacity-80" />
-              <span>Serving San Antonio, Austin &amp; Surrounding Areas</span>
+              <span>Serving San Antonio through Austin Texas</span>
             </div>
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4 opacity-80" />
@@ -128,7 +128,7 @@ const Header = () => {
               <div className="px-6 py-4 bg-primary/5 border-b border-border">
                 <div className="flex items-center gap-2 text-sm text-primary mb-2">
                   <MapPin className="h-4 w-4" />
-                  <span>San Antonio / Austin, TX</span>
+                  <span>San Antonio through Austin Texas</span>
                 </div>
                 <div className="inline-flex items-center gap-2 bg-green-600 text-white px-3 py-1 rounded-full text-sm">
                   <CheckCircle className="h-3 w-3" />

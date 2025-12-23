@@ -18,10 +18,10 @@ const services = [
   {
     id: "lighting",
     icon: Lightbulb,
-    title: "Permanent Christmas Lights",
-    description: "Beautiful Permanent Christmas Lights solutions for your home. Perfect for holidays, security, and everyday ambiance with smart app control.",
+    title: "Permanent Holiday Lights",
+    description: "Beautiful Permanent Holiday Lights solutions for your home. Perfect for holidays, security, and everyday ambiance with smart app control.",
     image: serviceLighting,
-    features: ["Permanent Christmas Lights", "Smart App Control", "Energy Efficient", "Professional Installation"],
+    features: ["Permanent Holiday Lights", "Smart App Control", "Energy Efficient", "Professional Installation"],
     featured: false,
   },
   {
@@ -34,10 +34,10 @@ const services = [
     featured: false,
   },
   {
-    id: "fencing",
+    id: "tree-trimming",
     icon: Fence,
-    title: "Fencing Services",
-    description: "Quality fence installation, repair, and cleaning services. From wood to metal fencing, we help protect and beautify your property boundaries.",
+    title: "Tree Trimming Services",
+    description: "Professional tree trimming, pruning, and removal services. We help maintain the health and beauty of your trees while ensuring safety for your property.",
     image: serviceCommercial,
     features: ["New Installation", "Repairs & Restoration", "Fence Cleaning", "Multiple Materials"],
     featured: false,
@@ -77,8 +77,8 @@ const ServicesSection = () => {
             <span className="gradient-text">Home Services</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            From powerful pressure washing to beautiful Permanent Christmas Lights, we offer comprehensive
-            services to transform and maintain your property in San Antonio, Austin, and surrounding areas.
+            From powerful pressure washing to beautiful Permanent Holiday Lights, we offer comprehensive
+            services to transform and maintain your property in San Antonio through Austin Texas.
           </p>
 
           {/* Free Estimate Badge */}

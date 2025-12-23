@@ -17,7 +17,7 @@ const testimonials = [
     location: "San Marcos, TX",
     rating: 5,
     text: "The outdoor lighting they installed has completely transformed our home! We get compliments from neighbors all the time. The app control is so convenient - we can change colors for any holiday.",
-    service: "Permanent Christmas Lights",
+    service: "Permanent Holiday Lights",
   },
   {
     id: 3,
@@ -32,8 +32,8 @@ const testimonials = [
     name: "Jennifer Chen",
     location: "Canyon Lake, TX",
     rating: 5,
-    text: "Had a new fence installed and couldn't be happier. The team was professional and the quality is outstanding. They even helped us choose the right style for our property. Great experience!",
-    service: "Fencing",
+    text: "Had our trees trimmed and couldn't be happier. The team was professional and the quality is outstanding. They even helped us decide which branches needed removal for safety. Great experience!",
+    service: "Tree Trimming",
   },
 ];
 

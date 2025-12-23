@@ -12,14 +12,14 @@ const galleryImages = [
   {
     id: 1,
     src: heroPermanentLighting,
-    title: "Modern Home Permanent Christmas Lights",
-    category: "Permanent Christmas Lights",
+    title: "Modern Home Permanent Holiday Lights",
+    category: "Permanent Holiday Lights",
   },
   {
     id: 2,
     src: serviceLighting,
     title: "Architectural Illumination",
-    category: "Permanent Christmas Lights",
+    category: "Permanent Holiday Lights",
   },
   {
     id: 3,
@@ -42,12 +42,12 @@ const galleryImages = [
   {
     id: 6,
     src: holidayLightsNew,
-    title: "Holiday Permanent Christmas Lights",
-    category: "Permanent Christmas Lights",
+    title: "Holiday Permanent Holiday Lights",
+    category: "Permanent Holiday Lights",
   },
 ];
 
-const categories = ["All", "Pressure Washing", "Permanent Christmas Lights", "Gutter Cleaning"];
+const categories = ["All", "Pressure Washing", "Permanent Holiday Lights", "Gutter Cleaning"];
 
 const GallerySection = () => {
   const [filter, setFilter] = useState("All");

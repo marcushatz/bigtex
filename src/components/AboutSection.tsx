@@ -60,19 +60,19 @@ const AboutSection = () => {
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-6"
               >
                 <MapPin className="h-4 w-4" />
-                <span className="font-medium">Proudly Serving San Antonio, Austin &amp; Surrounding Areas</span>
+                <span className="font-medium">Proudly Serving San Antonio through Austin Texas</span>
               </motion.div>
 
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Big Tex Pressure Pros has been serving the San Antonio, Austin, and surrounding areas
+                Big Tex Pressure Pros has been serving the San Antonio through Austin Texas area
                 equipment with meticulous attention to detail, ensuring every project exceeds expectations.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
                 From <span className="text-secondary font-semibold">pressure washing</span> and{" "}
                 <span className="text-secondary font-semibold">gutter cleaning</span> to{" "}
-                <span className="text-secondary font-semibold">Permanent Christmas Lights</span> and{" "}
-                <span className="text-secondary font-semibold">fencing services</span>,
+                <span className="text-secondary font-semibold">Permanent Holiday Lights</span> and{" "}
+                <span className="text-secondary font-semibold">tree trimming services</span>,
                 we&apos;re your one-stop solution for complete exterior home care. All of our
                 services come with free estimates—no obligation, no pressure.
               </p>

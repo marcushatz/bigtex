@@ -12,16 +12,16 @@ const slides = [
     title: "Professional",
     subtitle: "Exterior Cleaning",
     highlight: "Pressure Washing & More",
-    description: "Transform your property with our professional pressure washing, gutter cleaning, and soft washing services. Serving San Antonio, Austin & Surrounding Areas.",
+    description: "Transform your property with our professional pressure washing, gutter cleaning, and soft washing services. Serving San Antonio through Austin Texas.",
     icon: Droplets,
   },
   {
     id: 2,
     image: heroPermanentLighting,
     title: "Beautiful",
-    subtitle: "Permanent Christmas Lights",
-    highlight: "Permanent Christmas Lights Solutions",
-    description: "Enhance your home's beauty and security with our professional Permanent Christmas Lights installation. Energy-efficient LED systems for year-round enjoyment.",
+    subtitle: "Permanent Holiday Lights",
+    highlight: "Permanent Holiday Lights Solutions",
+    description: "Enhance your home's beauty and security with our professional Permanent Holiday Lights installation. Energy-efficient LED systems for year-round enjoyment.",
     icon: Lightbulb,
   },
 ];
@@ -103,7 +103,7 @@ const HeroSection = () => {
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30"
                 >
                   <MapPin className="h-4 w-4 text-white" />
-                  <span className="text-sm text-white font-medium">San Antonio & Austin, TX</span>
+                  <span className="text-sm text-white font-medium">San Antonio through Austin Texas</span>
                 </motion.div>
 
                 {/* Icon Badge */}

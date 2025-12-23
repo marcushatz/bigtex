@@ -7,9 +7,9 @@ const Footer = () => {
 
   const services = [
     "Pressure Washing",
-    "Permanent Christmas Lights",
+    "Permanent Holiday Lights",
     "Gutter Cleaning",
-    "Fencing Services",
+    "Tree Trimming Services",
     "Soft Washing",
     "Commercial Services",
   ];
@@ -44,7 +44,7 @@ const Footer = () => {
               height="80"
             />
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              San Antonio & Austin&apos;s trusted exterior cleaning and home service professionals.
+              San Antonio through Austin Texas&apos;s trusted exterior cleaning and home service professionals.
               We bring quality and care to every project.
             </p>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-600 text-white text-sm">
@@ -150,7 +150,7 @@ const Footer = () => {
               <li className="flex items-start gap-3 text-primary-foreground/70 text-sm">
                 <MapPin className="h-4 w-4 text-sky-light mt-0.5" />
                 <span>
-                  San Antonio Texas-Austin Texas
+                  San Antonio through Austin Texas
                   <br />
                   & Surrounding Areas
                 </span>
