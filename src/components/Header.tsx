@@ -71,6 +71,8 @@ const Header = () => {
                 src={logo}
                 alt="Big Tex Pressure Pros"
                 className="h-14 md:h-16 w-auto object-contain"
+                width="200"
+                height="64"
               />
             </motion.a>
 
@@ -101,6 +103,7 @@ const Header = () => {
             <button
               className="lg:hidden p-2 text-foreground"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle mobile menu"
             >
               {isMobileMenuOpen ? (
                 <X className="h-6 w-6" />

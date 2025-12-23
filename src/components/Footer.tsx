@@ -36,7 +36,13 @@ const Footer = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <img src={logo} alt="Big Tex Pressure Pros" className="h-20 w-auto bg-white/90 rounded-lg p-2" />
+            <img
+              src={logo}
+              alt="Big Tex Pressure Pros"
+              className="h-20 w-auto bg-white/90 rounded-lg p-2"
+              width="240"
+              height="80"
+            />
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               San Antonio & Austin&apos;s trusted exterior cleaning and home service professionals.
               We bring quality and care to every project.
@@ -52,6 +58,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, y: -2 }}
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-primary-foreground hover:bg-white/20 transition-colors"
+                aria-label="Visit our Facebook page"
               >
                 <Facebook className="h-5 w-5" />
               </motion.a>
@@ -59,6 +66,7 @@ const Footer = () => {
                 href="#"
                 whileHover={{ scale: 1.1, y: -2 }}
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-primary-foreground hover:bg-white/20 transition-colors"
+                aria-label="Visit our Instagram profile"
               >
                 <Instagram className="h-5 w-5" />
               </motion.a>
@@ -171,7 +179,7 @@ const Footer = () => {
               href="https://hatwebs.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary-foreground/40 hover:text-primary-foreground/80 transition-colors text-sm font-medium tracking-wide"
+              className="text-primary-foreground/60 hover:text-primary-foreground/80 transition-colors text-sm font-medium tracking-wide"
             >
               Website by Hatwebs
             </a>

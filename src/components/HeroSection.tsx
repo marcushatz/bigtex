@@ -67,6 +67,9 @@ const HeroSection = () => {
             src={currentData.image}
             alt={currentData.highlight}
             className="w-full h-full object-cover"
+            width="1920"
+            height="1080"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 hero-overlay" />
         </motion.div>
@@ -215,6 +218,7 @@ const HeroSection = () => {
         <button
           onClick={prevSlide}
           className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/20 transition-colors border border-white/20"
+          aria-label="Previous slide"
         >
           <ChevronLeft className="h-6 w-6" />
         </button>
@@ -231,6 +235,7 @@ const HeroSection = () => {
                 ? "w-8 bg-sky-light shadow-glow"
                 : "w-2 bg-white/40 hover:bg-white/60"
                 }`}
+              aria-label={`Go to slide ${index + 1}`}
             />
           ))}
         </div>
@@ -238,6 +243,7 @@ const HeroSection = () => {
         <button
           onClick={nextSlide}
           className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/20 transition-colors border border-white/20"
+          aria-label="Next slide"
         >
           <ChevronRight className="h-6 w-6" />
         </button>
