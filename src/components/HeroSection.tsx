@@ -7,15 +7,6 @@ import heroPermanentLighting from "@/assets/bigtexlight1.png";
 
 const slides = [
   {
-    id: 1,
-    image: heroPressureWashing,
-    title: "Professional",
-    subtitle: "Exterior Cleaning",
-    highlight: "Pressure Washing & More",
-    description: "Transform your property with our professional pressure washing, gutter cleaning, and soft washing services. Serving San Antonio through Austin Texas.",
-    icon: Droplets,
-  },
-  {
     id: 2,
     image: heroPermanentLighting,
     title: "Beautiful",
@@ -23,6 +14,15 @@ const slides = [
     highlight: "Permanent Holiday Lights Solutions",
     description: "Enhance your home's beauty and security with our professional Permanent Holiday Lights installation. Energy-efficient LED systems for year-round enjoyment.",
     icon: Lightbulb,
+  },
+  {
+    id: 1,
+    image: heroPressureWashing,
+    title: "Professional",
+    subtitle: "Exterior Cleaning",
+    highlight: "Pressure Washing & More",
+    description: "Transform your property with our professional pressure washing, gutter cleaning, and soft washing services. Serving San Antonio through Austin Texas.",
+    icon: Droplets,
   },
 ];
 
